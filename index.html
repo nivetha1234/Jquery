@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <script type="text/javascript" src="js/jquery-3.4.1.js"> </script>
+    <script src="main.js"> </script>
+    <style>
+        body{
+            background-image: url("bloodform.jpg");
+        }
+    form{
+    width: 35%;
+  padding: 12px 20px;
+  margin: 10px 10px 10px 700px;
+  box-sizing: border-box;
+  background-color: white;
+   }
+
+input[type=submit] {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 35%;
+}
+    </style>
+    </head>
+<body>
+    
+    <form>
+        <h1 > BLOOD DONATION </h1>
+    
+        REGISTRATION ID: <BR>
+        <input type="text" name="reg"> <br><br>
+        DONOR NAME: <br>
+        <input type="text" name="dname"> <br><br>
+        CONTACT NO: <br>
+        <input type="text" name="phone"> <br> <br>
+        EMAIL ID: <br>
+        <input type="text" name="mailid" size="50"> <br> <br>
+        <div>
+        ADDRESS: <br>
+        <textarea name="address" rows="5" cols="50"> </textarea><br> <br>
+        LOCALITY: <br>
+        <input type="text" name="locality"> <br> <br>
+        BLOOD GROUP:<br>
+         <select name="bgrp">
+                <option> A1+ve</option>
+                <option> A1-ve</option>
+                <option> B+ve</option>
+                <option> B-ve</option>
+                <option> AB+ve</option>
+                <option> AB-ve</option>
+                <option> O+ve</option>
+                <option> O-ve</option>
+            </select>
+        <br> <br>
+        GENDER: <br>
+        <input type="radio" name="gender" value="female">female<br> 
+        <input type="radio" name="gender" value="male"> male <br>
+        <input type="radio" name="gender" value="transgender"> transgender<br>
+        <br>
+        EMERGENCY DONOR: <br>
+        <i> if you can donate anytime immediately,click yes.else click no.</i>
+        <br>
+        <input type="radio" name="donate" value="yes"> yes 
+        <input type="radio" name="donate" value="no"> no
+        <br> <br>
+        NO OF DONATIONS: <br>
+        <input type="number" name="no" min="0"> <br>
+        <br>
+        LAST DONATION DATE: <br>
+        <input type="date" name="ddate"> <br><br>
+        AGE: <br>
+        <input type="number" name="age" min="1" max="60"> <br> <br>
+        DATE OF BIRTH:<br>
+        <input type="date" name="bday"> <br> <br>
+        </div>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

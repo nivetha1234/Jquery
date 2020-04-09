@@ -1,0 +1,35 @@
+$(function()
+{  
+    //value for animation  
+    var width = 900;
+    var animationSpeed = 1000;  
+    var pause = 3000;  
+    var currentSlide = 1;  
+    //Dom element.   
+    var $slider = $('#slider');  
+    var $sliderAnimation = $slider.find('.slides');  
+    var $slides = $sliderAnimation.find('.slide');  
+  
+    setInterval(function()
+    {  
+         $sliderAnimation.animate({'margin-left': '-='+width}, animationSpeed, function(){  
+         currentSlide ++;  
+         if(currentSlide === $slides.length)  
+         {  
+                $sliderAnimation.css('margin-left', 0);  
+                currentSlide = 1;  
+         }  
+     });  
+    },pause);  
+});  
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "grey");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "pink");
+  });
+  
+ 
+   });
+  
